@@ -437,22 +437,19 @@
     <section class="widget_section" style="background-color: #222227;padding: 100px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer_widget">
-                        <img src="Design/images/restaurant-logo.png" alt="Logotipo del Restaurante" style="width: 150px;margin-bottom: 20px;">
+                        <img src="Design/images/logo.jpg" alt="Logotipo del Restaurante" style="width: 150px;margin-bottom: 20px;">
                         <p>
                             Nuestro Restaurante es uno de los mejores, ofrece deliciosas Menús y Plato. Puedes reservar una mesa o pedir comida.
                         </p>
                         <ul class="widget_social">
-                            <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                            <li><a href="https://www.facebook.com/pizzeriapizzoni" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/pizzeriapizzoni" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                      <div class="footer_widget">
                         <h3>Sede Central</h3>
                         <p>
@@ -465,20 +462,17 @@
                         </p>
                      </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer_widget">
                         <h3>
                             Horarios de Atención
                         </h3>
                         <ul class="opening_time">
-                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
-                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
-                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
-                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
+                            <li>Martes a Domingo 5:00pm - 11:30pm</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="footer_widget">
                         <h3>Suscríbete a nuestro contenido</h3>
                         <div class="subscribe_form">
@@ -489,7 +483,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
