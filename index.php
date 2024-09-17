@@ -48,7 +48,7 @@
 	<section class="home-section" id="home">
 		<div class="container">
 			<div class="row" style="flex-wrap: nowrap;">
-				<div class="col-md-6 home-left-section">
+				<div class="col-md-7 home-left-section">
 					<div style="padding: 100px 0px; color: white;">
 						<h1>
 							PIZZA VINCENT.
@@ -61,7 +61,11 @@
 							Pizza Italiana con Tomates Cherry y Albahaca  
 						</p>
 						<div style="display: flex;">
-							<a href="order_food.php" target="_blank" class="bttn_style_1" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">
+							<a href="table-reservation.php" target="_blank" class="bttn_style_2" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">
+							Reservar Mesa
+								<i class="fas fa-angle-right"></i>
+							</a>
+							<a href="order_food.php" target="_blank" class="bttn_style_2" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">
 								Pedir Ahora
 								<i class="fas fa-angle-right"></i>
 							</a>

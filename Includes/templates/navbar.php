@@ -17,9 +17,9 @@
                             <li><a href="index.php#contact">CONTACTO</a></li>
                         </ul>
                     </div>
-                    <div class="header-btn" style="margin-left:10px">
+                    <!-- <div class="header-btn" style="margin-left:10px">
                         <a href="table-reservation.php" target="_blank" class="menu-btn">Reservar Mesa</a>
-                    </div>
+                    </div> -->
                 </div>
             </nav>
         </div>
