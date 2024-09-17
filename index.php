@@ -51,22 +51,22 @@
 				<div class="col-md-6 home-left-section">
 					<div style="padding: 100px 0px; color: white;">
 						<h1>
-							VINCENT PIZZA.
+							PIZZA VINCENT.
 						</h1>
 						<h2>
-							MAKING PEOPLE HAPPY
+							HACIENDO FELICES A LAS PERSONAS
 						</h2>
 						<hr>
 						<p>
-							Italian Pizza With Cherry Tomatoes and Green Basil  
+							Pizza Italiana con Tomates Cherry y Albahaca  
 						</p>
 						<div style="display: flex;">
 							<a href="order_food.php" target="_blank" class="bttn_style_1" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">
-								Order Now
+								Pedir Ahora
 								<i class="fas fa-angle-right"></i>
 							</a>
 							<a href="#menus" class="bttn_style_2" style="display: flex;justify-content: center;align-items: center;">
-								VIEW MENU
+								VER MENU
 								<i class="fas fa-angle-right"></i>
 							</a>
 						</div>
@@ -87,11 +87,12 @@
 	                    <img src="Design/images/quality_food_img.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Alimentos de Calidad
 	                        </h3>
 	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+	                        	Se encuentra en una situacion de alta calidad, con una seleccion de 
+	                        	ingredientes frescos y de primera calidad, como nuestros tomates cherry 
+	                        	y albahaca fresca, que aportan un sabor unico y delicioso.
 	                        </p>
 	                    </div>
 	                </div>
@@ -101,11 +102,12 @@
 	                    <img src="Design/images/fast_delivery_img.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Entrega rápida
 	                        </h3>
 	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+	                        	Se encuentra en una situacion de alta calidad, con una seleccion de 
+	                        	ingredientes frescos y de primera calidad, como nuestros tomates cherry 
+	                        	y albahaca fresca, que aportan un sabor unico y delicioso.
 	                        </p>
 	                    </div>
 	                </div>
@@ -115,11 +117,12 @@
 	                    <img src="Design/images/original_taste_img.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Sabor Original
 	                        </h3>
 	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+	                        	Se encuentra en una situacion de alta calidad, con una seleccion de 
+	                        	ingredientes frescos y de primera calidad, como nuestros tomates cherry 
+	                        	y albahaca fresca, que aportan un sabor unico y delicioso.
 	                        </p>
 	                    </div>
 	                </div>
@@ -129,11 +132,11 @@
 		</div>
 	</section>
 
-	<!-- OUR MENUS SECTION -->
+	<!-- NUESTROS MENUS SECTION -->
 
 	<section class="our_menus" id="menus">
 		<div class="container">
-			<h2 style="text-align: center;margin-bottom: 30px">DISCOVER OUR MENUS</h2>
+			<h2 style="text-align: center;margin-bottom: 30px">DESCUBRE NUESTROS MENUS</h2>
 			<div class="menus_tabs">
 				<div class="menus_tabs_picker">
 					<ul style="text-align: center;margin-bottom: 70px">
@@ -193,7 +196,7 @@
 
                                     if($stmt_menus->rowCount() == 0)
                                     {
-                                        echo "<div style='margin:auto'>No Available Menus for this category!</div>";
+                                        echo "<div style='margin:auto'>No hay menus disponibles para esta categoria!</div>";
                                     }
 
                                     echo "<div class='row'>";
@@ -219,7 +222,7 @@
 	                                                            <?php echo $menu['menu_description']; ?>
 	                                                        </p>
 	                                                        <span class="menu_price">
-	                                                        	<?php echo "$".$menu['menu_price']; ?>
+	                                                        	<?php echo "S/. ".$menu['menu_price']; ?>
 	                                                        </span>
 	                                                    </div>
 	                                                </div>
@@ -244,7 +247,7 @@
 
                                     if($stmt_menus->rowCount() == 0)
                                     {
-                                        echo "<div class = 'no_menus_div'>No Available Menus for this category!</div>";
+                                        echo "<div class = 'no_menus_div'>No hay menus disponibles para esta categoria!</div>";
                                     }
 
                                     echo "<div class='row'>";
@@ -268,7 +271,7 @@
 	                                                            <?php echo $menu['menu_description']; ?>
 	                                                        </p>
 	                                                        <span class="menu_price">
-	                                                        	<?php echo "$".$menu['menu_price']; ?>
+	                                                        	<?php echo "S/. ".$menu['menu_price']; ?>
 	                                                        </span>
 	                                                    </div>
 	                                                </div>
@@ -294,11 +297,11 @@
 		</div>
 	</section>
 
-	<!-- IMAGE GALLERY -->
+	<!-- GALER A DE IM GENES -->
 
 	<section class="image-gallery" id="gallery">
 		<div class="container">
-			<h2 style="text-align: center;margin-bottom: 30px">IMAGE GALLERY</h2>
+			<h2 style="text-align: center;margin-bottom: 30px">GALERIA DE IMAGENES</h2>
 			<?php
 				$stmt_image_gallery = $con->prepare("Select * from image_gallery");
                 $stmt_image_gallery->execute();
@@ -324,7 +327,7 @@
 		</div>
 	</section>
 
-	<!-- CONTACT US SECTION -->
+	<!-- SECCI N DE CONTACTO -->
 
 	<section class="contact-section" id="contact">
         <div class="container">
@@ -332,20 +335,19 @@
                 <div class="col-lg-6 sm-padding">
                     <div class="contact-info">
                         <h2>
-                            Get in touch with us & 
-                            <br>send us message today!
+                            Ponte en contacto con nosotros & envienos un mensaje hoy!
                         </h2>
                         <p>
-                            Saasbiz is a different kind of architecture practice. Founded by LoganCee in 1991, we’re an employee-owned firm pursuing a democratic design process that values everyone’s input.
+                            Saasbiz es una practica de arquitectura diferente. Fundada por LoganCee en 1991, somos una empresa de propiedad de los empleados que persigue un proceso de dise o democratico que valora la entrada de todos.
                         </p>
                         <h3>
                             <?php echo $restaurant_address; ?>
                         </h3>
                         <h4>
-                            <span>Email:</span> 
+                            <span>Correo electronico:</span> 
                             <?php echo $restaurant_email; ?>
                             <br> 
-                            <span>Phone:</span> 
+                            <span>Teléfono:</span> 
                             <?php echo $restaurant_phonenumber; ?>
                         </h4>
                     </div>
@@ -355,13 +357,13 @@
                         <div id="contact_ajax_form" class="contactForm">
                             <div class="form-group colum-row row">
                                 <div class="col-sm-6">
-                                    <input type="text" id="contact_name" name="name" oninput="document.getElementById('invalid-name').innerHTML = ''" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Name">
+                                    <input type="text" id="contact_name" name="name" oninput="document.getElementById('invalid-name').innerHTML = ''" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Nombre">
                                     <div class="invalid-feedback" id="invalid-name" style="display: block">
                                     	
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="email" id="contact_email" name="email" oninput="document.getElementById('invalid-email').innerHTML = ''" class="form-control" placeholder="Email">
+                                    <input type="email" id="contact_email" name="email" oninput="document.getElementById('invalid-email').innerHTML = ''" class="form-control" placeholder="Correo electronico">
                                     <div class="invalid-feedback" id="invalid-email" style="display: block">
                                     	
                                     </div>
@@ -369,7 +371,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input type="text" id="contact_subject" name="subject" oninput="document.getElementById('invalid-subject').innerHTML = ''" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Subject">
+                                    <input type="text" id="contact_subject" name="subject" oninput="document.getElementById('invalid-subject').innerHTML = ''" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Asunto">
                                     <div class="invalid-feedback" id="invalid-subject" style="display: block">
                                     	
                                     </div>
@@ -377,7 +379,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <textarea id="contact_message" name="message" oninput="document.getElementById('invalid-message').innerHTML = ''" cols="30" rows="5" class="form-control message" placeholder="Message"></textarea>
+                                    <textarea id="contact_message" name="message" oninput="document.getElementById('invalid-message').innerHTML = ''" cols="30" rows="5" class="form-control message" placeholder="Mensaje"></textarea>
                                     <div class="invalid-feedback" id="invalid-message" style="display: block">
                                     	
                                     </div>
@@ -385,10 +387,10 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <button id="contact_send" class="bttn_style_2">Send Message</button>
+                                    <button id="contact_send" class="bttn_style_2">Enviar Mensaje</button>
                                 </div>
                             </div>
-                            <div id="sending_load" style="display: none;">Sending...</div>
+                            <div id="sending_load" style="display: none;">Enviando...</div>
                             <div id="contact_status_message"></div>
                         </div>
                     </div>
@@ -397,7 +399,7 @@
         </div>
     </section>
 
-	<!-- OUR QUALITIES SECTION -->
+	<!-- NUESTRAS CALIDADES SECTION -->
 	
 	<section class="our_qualities_v2">
 		<div class="container">
@@ -405,21 +407,21 @@
 				<div class="col-md-4" style="padding: 10px;">
 					<div class="quality quality_1">
 						<div class="text_inside_quality">
-							<h5>Quality Foods</h5>
+							<h5>Comida de Calidad</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4" style="padding: 10px;">
 					<div class="quality quality_2">
 						<div class="text_inside_quality">
-							<h5>Fastest Delivery</h5>
+							<h5>Entrega Rápida</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4" style="padding: 10px;">
 					<div class="quality quality_3">
 						<div class="text_inside_quality">
-							<h5>Original Recipes</h5>
+							<h5>Recetas Originales</h5>
 						</div>
 					</div>
 				</div>
@@ -427,16 +429,16 @@
 		</div>
 	</section>
 
-	<!-- WIDGET SECTION / FOOTER -->
+	<!-- SECCI N DE WIDGETS / PIE DE P GINA -->
 
     <section class="widget_section" style="background-color: #222227;padding: 100px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer_widget">
-                        <img src="Design/images/restaurant-logo.png" alt="Restaurant Logo" style="width: 150px;margin-bottom: 20px;">
+                        <img src="Design/images/restaurant-logo.png" alt="Logotipo del Restaurante" style="width: 150px;margin-bottom: 20px;">
                         <p>
-                            Our Restaurnt is one of the bests, provide tasty Menus and Dishes. You can reserve a table or Order food.
+                            Nuestro Restaurante es uno de los mejores, ofrece deliciosas Menús y Plato. Puedes reservar una mesa o pedir comida.
                         </p>
                         <ul class="widget_social">
                             <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
@@ -449,7 +451,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                      <div class="footer_widget">
-                        <h3>Headquarters</h3>
+                        <h3>Sede Central</h3>
                         <p>
                             <?php echo $restaurant_address; ?>
                         </p>
@@ -463,23 +465,23 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer_widget">
                         <h3>
-                            Opening Hours
+                            Horarios de Atención
                         </h3>
                         <ul class="opening_time">
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
+                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
+                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
+                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
+                            <li>Lunes a Viernes 11:30am - 8:00pm</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer_widget">
-                        <h3>Subscribe to our contents</h3>
+                        <h3>Suscríbete a nuestro contenido</h3>
                         <div class="subscribe_form">
                             <form action="#" class="subscribe_form" novalidate="true">
-                                <input type="email" name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address...">
-                                <button type="submit" class="submit">SUBSCRIBE</button>
+                                <input type="email" name="EMAIL" id="subs-email" class="form_input" placeholder="Dirección de correo electrónico...">
+                                <button type="submit" class="submit">SUSCRIBETE</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>
@@ -489,7 +491,7 @@
         </div>
     </section>
 
-    <!-- FOOTER BOTTOM  -->
+    <!-- PIE DE PÁGINA  -->
 
     <?php include "Includes/templates/footer.php"; ?>
 
@@ -508,33 +510,33 @@
 
 	            if($.trim(contact_name) == "")
 	            {
-	            	$('#invalid-name').text('This is a required field!');
+	            	$('#invalid-name').text('Este campo es requerido!');
 	            	flag = 1;
 	            }
 	            else
 	            {
 	            	if(contact_name.length < 5)
 	            	{
-	            		$('#invalid-name').text('Length is less than 5 letters!');
+	            		$('#invalid-name').text('La longitud es menor a 5 letras!');
 	            		flag = 1;
 	            	}
 	            }
 
 	            if(!ValidateEmail(contact_email))
 	            {
-	            	$('#invalid-email').text('Invalid e-mail!');
+	            	$('#invalid-email').text('Correo electrónico inválido!');
 	            	flag = 1;
 	            }
 
 	            if($.trim(contact_subject) == "")
 	            {
-	            	$('#invalid-subject').text('This is a required field!');
+	            	$('#invalid-subject').text('Este campo es requerido!');
 	            	flag = 1;
 	            }
 
 	            if($.trim(contact_message) == "")
 	            {
-	            	$('#invalid-message').text('This is a required field!');
+	            	$('#invalid-message').text('Este campo es requerido!');
 	            	flag = 1;
 	            }
 
@@ -560,7 +562,7 @@
 					    },
 		                error: function(xhr, status, error) 
 		                {
-		                    alert("Internal ERROR has occured, please, try later!");
+		                    alert("Ha ocurrido un error interno, por favor, intente más tarde!");
 		                }
 		            });
 	            }

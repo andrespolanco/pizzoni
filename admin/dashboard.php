@@ -222,7 +222,7 @@
 
                                                 echo "</td>";
                                                 echo "<td>";
-                                                    echo $total_price."$";
+                                                    echo "S/. ".$total_price;
                                                 echo "</td>";
                                                 echo "<td>";
                                                     ?>

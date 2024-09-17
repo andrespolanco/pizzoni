@@ -74,7 +74,27 @@
                     <?php
                     	if(isset($_POST['save_settings']) && $_SERVER['REQUEST_METHOD'] == 'POST' && $form_flag == 0)
                 		{
+                			foreach ($options as $option)
+                			{
+                				try
+                				{
+                					$stmt = $con->prepare("update website_settings set option_value = ? where option_name = ?");
+                					$stmt->execute(array($_POST[$option['option_name']], $option['option_name']));
+                				}
+                				catch(Exception $e)
+                				{
+                					echo 'Error occurred: ' .$e->getMessage();
+                				}
+                			}
                 			
+                			?>
+                			<script type="text/javascript">
+                				swal("Website Settings","Website settings have been updated successfully", "success").then((value) => 
+                				{
+                					window.location.replace("website-settings.php");
+                				});
+                			</script>
+                			<?php
                 		}
                     ?>
 

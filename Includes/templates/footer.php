@@ -4,18 +4,17 @@
 				<div class="row">
 					<div class="col-md-6 xs-padding">
 						<div class="copyright">
-							© 
 							<script type="text/javascript"> 
 								document.write(new Date().getFullYear())
 							</script>
-							Vincent Restaurant Powered by JAIRI Idriss
+							Restaurante Vincent Powerd by JAIRI Idriss
 						</div>
 					</div>
 					<div class="col-md-6 xs-padding">
 						<ul class="footer_social">
-							<li><a href="#">Orders</a></li>
-							<li><a href="#">Terms</a></li>
-							<li><a href="#">Report Problem</a></li>
+							<li><a href="#">Pedidos</a></li>
+							<li><a href="#">Términos</a></li>
+							<li><a href="#">Reportar problema</a></li>
 						</ul>
 					</div>
 				</div>

@@ -61,7 +61,7 @@
 
     </style>
 
-    <!-- START ORDER FOOD SECTION -->
+    <!-- INICIO DE SECCI N RESERVA DE MESA -->
 
     <section style="
     background: url(Design/images/food_pic.jpg);
@@ -71,7 +71,7 @@
         <div class="layer">
             <div style="text-align: center;padding: 15px;">
                 <h1 style="font-size: 120px; color: white;font-family: 'Roboto'; font-weight: 100;
-">Book a Table</h1>
+">Reserva una Mesa</h1>
             </div>
         </div>
         
@@ -123,7 +123,7 @@
 
                     
                     echo "<div class = 'alert alert-success'>";
-                        echo "Great! Your Reservation has been created successfully.";
+                        echo " Genial! Tu reserva ha sido creada con éxito.";
                     echo "</div>";
 
                     $con->commit();
@@ -143,14 +143,14 @@
 
             <div class="text_header">
                 <span>
-                    1. Select Date & Time
+                    1. Selecciona la fecha y hora
                 </span>
             </div>
             <form method="POST" action="table-reservation.php">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                         <div class="form-group">
-                            <label for="reservation_date">Date</label>
+                            <label for="reservation_date">Fecha</label>
                             <input type="date" min="<?php echo (isset($_POST['reservation_date']))?$_POST['reservation_date']:date('Y-m-d',strtotime("+1day"));  ?>" 
                             value = "<?php echo (isset($_POST['reservation_date']))?$_POST['reservation_date']:date('Y-m-d',strtotime("+1day"));  ?>"
                             class="form-control" name="reservation_date">
@@ -158,27 +158,27 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                         <div class="form-group">
-                            <label for="reservation_time">Time</label>
+                            <label for="reservation_time">Hora</label>
                             <input type="time" value="<?php echo (isset($_POST['reservation_time']))?$_POST['reservation_time']:date('H:i');  ?>" class="form-control" name="reservation_time">
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                         <div class="form-group">
-                            <label for="number_of_guests">How many people?</label>
+                            <label for="number_of_guests"> Cuántos personas?</label>
                             <select class="form-control" name="number_of_guests">
                                 <option value="1" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>
-                                    One person
+                                    Una persona
                                 </option>
-                                <option value="2" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Two people</option>
-                                <option value="3" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Three people</option>
-                                <option value="4" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Four people</option>
+                                <option value="2" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Dos personas</option>
+                                <option value="3" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Tres personas</option>
+                                <option value="4" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Cuatro personas</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                         <div class="form-group">
                             <label for="check_availability" style="visibility: hidden;">Check Availability</label>
-                            <input type="submit" class="form-control check_availability_submit" name="check_availability_submit">
+                            <input type="submit" class="form-control check_availability_submit" name="check_availability_submit" value="Validar disponibilidad">
                         </div>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
                     {
                         ?>
                             <div class="error_div">
-                                <span class="error_message" style="font-size: 16px">ALL TABLES ARE RESERVED</span>
+                                <span class="error_message" style="font-size: 16px">Todas las mesas están reservadas</span>
                             </div>
                         <?php
                     }
@@ -224,7 +224,7 @@
                         ?>
                             <div class="text_header">
                                 <span>
-                                    2. Client details
+                                    2. Detalles del cliente
                                 </span>
                             </div>
                             <form method="POST" action="table-reservation.php">
@@ -235,30 +235,30 @@
                                 <div class="client_details_tab">
                                     <div class="form-group colum-row row">
                                         <div class="col-sm-12">
-                                            <input type="text" name="client_full_name" id="client_full_name" oninput="document.getElementById('required_fname').style.display = 'none'" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Full name">
+                                            <input type="text" name="client_full_name" id="client_full_name" oninput="document.getElementById('required_fname').style.display = 'none'" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Nombre completo">
                                             <div class="invalid-feedback" id="required_fname">
-                                                Invalid Name!
+                                                Invalido!
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6">
-                                            <input type="email" name="client_email" id="client_email" oninput="document.getElementById('required_email').style.display = 'none'" class="form-control" placeholder="E-mail">
+                                            <input type="email" name="client_email" id="client_email" oninput="document.getElementById('required_email').style.display = 'none'" class="form-control" placeholder="Correo electrónico">
                                             <div class="invalid-feedback" id="required_email">
-                                                Invalid E-mail!
+                                                Invalido!
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text"  name="client_phone_number" id="client_phone_number" oninput="document.getElementById('required_phone').style.display = 'none'" class="form-control" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Phone number">
+                                            <input type="text"  name="client_phone_number" id="client_phone_number" oninput="document.getElementById('required_phone').style.display = 'none'" class="form-control" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Número de teléfono">
                                             <div class="invalid-feedback" id="required_phone">
-                                                Invalid Phone number!
+                                                Invalido!
                                             </div>
                                         </div>
                                     </div>
                                     
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" name="submit_table_reservation_form" class="btn btn-info" value="Make a Reservation">
+                                    <input type="submit" name="submit_table_reservation_form" class="btn btn-info" value="Reservar">
                                 </div>
                             </form>
                         <?php
@@ -305,33 +305,33 @@
             <div class="col-md-3 details_card">
                 <span>30</span>
                 <div>
-                    Total 
+                    Total de 
                     <br>
-                    Reservations
+                    Reservas
                 </div>
             </div>
             <div class="col-md-3 details_card">
                 <span>30</span>
                 <div>
-                    Total 
+                    Total de 
                     <br>
-                    Menus
+                    Menús
                 </div>
             </div>
             <div class="col-md-3 details_card">
                 <span>30</span>
                 <div>
-                    Years of 
+                    Años de 
                     <br>
-                    Experience
+                    Experiencia
                 </div>
             </div>
             <div class="col-md-3 details_card">
                 <span>30</span>
                 <div>
-                    Profesionnal 
+                    Cocineros 
                     <br>
-                    Cook
+                    Profesionales
                 </div>
             </div>
         </div>

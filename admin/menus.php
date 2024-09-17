@@ -193,7 +193,7 @@
                                                 echo $menu['menu_description'];
                                             echo "</td>";
                                             echo "<td>";
-                                                echo "$".$menu['menu_price'];
+                                                echo "S/. ".$menu['menu_price'];
                                             echo "</td>";
                                             echo "<td>";
                                                 /****/
@@ -401,7 +401,7 @@
                                         <!-- MENU PRICE INPUT -->
 
                                         <div class="form-group">
-                                            <label for="menu_price">Menu Price($)</label>
+                                            <label for="menu_price">Menu Price(S/.)</label>
                                             <input type="text" class="form-control" value="<?php echo (isset($_POST['menu_price']))?htmlspecialchars($_POST['menu_price']):'' ?>" placeholder="Menu Price" name="menu_price">
                                             <?php
 
@@ -659,7 +659,7 @@
                                             <!-- MENU PRICE INPUT -->
 
                                             <div class="form-group">
-                                                <label for="menu_price">Menu Price($)</label>
+                                                <label for="menu_price">Menu Price (S/.)</label>
                                                 <input type="text" class="form-control" value="<?php echo $menu['menu_price'] ?>" placeholder="Menu Price" name="menu_price">
                                                 <?php
 
