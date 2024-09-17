@@ -7,7 +7,7 @@
 							<script type="text/javascript"> 
 								document.write(new Date().getFullYear())
 							</script>
-							Restaurante Vincent Powerd by JAIRI Idriss
+							Pizzería Pizzoni
 						</div>
 					</div>
 					<div class="col-md-6 xs-padding">

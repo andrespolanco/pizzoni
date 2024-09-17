@@ -299,7 +299,7 @@
     background-size: cover;
     color:white !important;
     min-height: 300px;">
-        <div class="layer">
+        <!-- <div class="layer">
             <div class="container">
             <div class="row">
             <div class="col-md-3 details_card">
@@ -336,7 +336,7 @@
             </div>
         </div>
         </div>
-         </div>
+         </div> -->
     </section>
 
     <!-- FOOTER BOTTOM  -->

@@ -9,6 +9,39 @@
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";
 
+    //Getting website settings
+
+    $stmt_web_settings = $con->prepare("SELECT * FROM website_settings");
+    $stmt_web_settings->execute();
+    $web_settings = $stmt_web_settings->fetchAll();
+
+    $restaurant_name = "";
+    $restaurant_email = "";
+    $restaurant_address = "";
+    $restaurant_phonenumber = "";
+
+    foreach ($web_settings as $option)
+    {
+        if($option['option_name'] == 'restaurant_name')
+        {
+            $restaurant_name = $option['option_value'];
+        }
+
+        elseif($option['option_name'] == 'restaurant_email')
+        {
+            $restaurant_email = $option['option_value'];
+        }
+
+        elseif($option['option_name'] == 'restaurant_phonenumber')
+        {
+            $restaurant_phonenumber = $option['option_value'];
+        }
+        elseif($option['option_name'] == 'restaurant_address')
+        {
+            $restaurant_address = $option['option_value'];
+        }
+    }
+
 
 ?>
 
@@ -405,59 +438,53 @@
     <section class="widget_section" style="background-color: #222227;padding: 100px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer_widget">
-                        <img src="Design/images/restaurant-logo.png" alt="Restaurant Logo" style="width: 150px;margin-bottom: 20px;">
+                        <img src="Design/images/logo.jpg" alt="Logotipo del Restaurante" style="width: 150px;margin-bottom: 20px;">
                         <p>
-                            Our Restaurnt is one of the bests, provide tasty Menus and Dishes. You can reserve a table or Order food.
+                            Nuestro Restaurante es uno de los mejores, ofrece deliciosas Menús y Plato. Puedes reservar una mesa o pedir comida.
                         </p>
                         <ul class="widget_social">
-                            <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                            <li><a href="https://www.facebook.com/pizzeriapizzoni" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/pizzeriapizzoni" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                      <div class="footer_widget">
-                        <h3>Headquarters</h3>
+                        <h3>Sede Central</h3>
                         <p>
-                            962 Fifth Avenue, 3rd Floor New York, NY10022
+                            <?php echo $restaurant_address; ?>
                         </p>
                         <p>
-                            contact@restaurant.com
+                            <?php echo $restaurant_email; ?>
                             <br>
-                            (+123) 456 789 101    
+                            <?php echo $restaurant_phonenumber; ?>   
                         </p>
                      </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer_widget">
                         <h3>
-                            Opening Hours
+                            Horarios de Atención
                         </h3>
                         <ul class="opening_time">
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
+                            <li>Martes a Domingo 5:00pm - 11:30pm</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="footer_widget">
-                        <h3>Subscribe to our contents</h3>
+                        <h3>Suscríbete a nuestro contenido</h3>
                         <div class="subscribe_form">
                             <form action="#" class="subscribe_form" novalidate="true">
-                                <input type="email" name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address...">
-                                <button type="submit" class="submit">SUBSCRIBE</button>
+                                <input type="email" name="EMAIL" id="subs-email" class="form_input" placeholder="Dirección de correo electrónico...">
+                                <button type="submit" class="submit">SUSCRIBETE</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
