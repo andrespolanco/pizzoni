@@ -299,12 +299,12 @@
 				<!-- ALERT MESSAGE -->
 
 				<div class="alert alert-danger" role="alert" style="display: none">
-					Please, select at least one item!
+					Por favor, selecciona al menos un item!
 				</div>
 
                 <div class="text_header">
                     <span>
-                        1. Choice of Items
+                        1. Seleccion de Items
                     </span>
                 </div>
 
