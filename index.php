@@ -51,14 +51,14 @@
 				<div class="col-md-7 home-left-section">
 					<div style="padding: 100px 0px; color: white;">
 						<h1>
-							PIZZA VINCENT.
+							PIZZONI
 						</h1>
 						<h2>
-							HACIENDO FELICES A LAS PERSONAS
+							PIZZERIA TEMATICA
 						</h2>
 						<hr>
 						<p>
-							Pizza Italiana con Tomates Cherry y Albahaca  
+						Podrás disfrutar de nuestras riquísimas pizzas artesanales
 						</p>
 						<div style="display: flex;">
 							<a href="table-reservation.php" target="_blank" class="bttn_style_2" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">
@@ -103,15 +103,14 @@
 				</div>
 				<div class="col-md-4">
 					<div class="our_qualities_column">
-	                    <img src="Design/images/fast_delivery_img.png" >
+	                    <img src="Design/images/xddd.svg" style="height: 100px; width: 94px">
 	                    <div class="caption">
 	                        <h3>
-	                            Entrega rápida
+	                            Juegos
 	                        </h3>
 	                        <p>
-	                        	Se encuentra en una situacion de alta calidad, con una seleccion de 
-	                        	ingredientes frescos y de primera calidad, como nuestros tomates cherry 
-	                        	y albahaca fresca, que aportan un sabor unico y delicioso.
+	                        	Disfruta de la mejor experiencia de juego con nosotros. Te transportaran a una epoca de juego retro donde podrás jugar con nuestras consolas y 
+								disfrutar de una deliciosa pizza.
 	                        </p>
 	                    </div>
 	                </div>
@@ -341,9 +340,9 @@
                         <h2>
                             Ponte en contacto con nosotros & envienos un mensaje hoy!
                         </h2>
-                        <p>
-                            Saasbiz es una practica de arquitectura diferente. Fundada por LoganCee en 1991, somos una empresa de propiedad de los empleados que persigue un proceso de dise o democratico que valora la entrada de todos.
-                        </p>
+						<br>
+						<br>
+						<br>
                         <h3>
                             <?php echo $restaurant_address; ?>
                         </h3>
@@ -405,7 +404,7 @@
 
 	<!-- NUESTRAS CALIDADES SECTION -->
 	
-	<section class="our_qualities_v2">
+	<section class="our_qualities_v2" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4" style="padding: 10px;">
