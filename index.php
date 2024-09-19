@@ -70,7 +70,7 @@
 								<i class="fas fa-angle-right"></i>
 							</a>
 							<a href="#menus" class="bttn_style_2" style="display: flex;justify-content: center;align-items: center;">
-								VER MENU
+								VER CARTA
 								<i class="fas fa-angle-right"></i>
 							</a>
 						</div>

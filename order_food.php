@@ -308,6 +308,8 @@
                     </span>
                 </div>
 
+                <strong>Nota Importante:</strong> El número de pedidos está limitado a 1 por persona por categoria.
+
 				<div>
 					<?php
 						$stmt = $con->prepare("Select * from menu_categories");
@@ -371,16 +373,16 @@
 
                 <div class="text_header">
                     <span>
-                        2. Client Details
+                        2. Detalles del cliente
                     </span>
                 </div>
 
                 <div>
                     <div class="form-group colum-row row">
                         <div class="col-sm-12">
-                            <input type="text" name="client_full_name" id="client_full_name" oninput="document.getElementById('required_fname').style.display = 'none'" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Full name">
+                            <input type="text" name="client_full_name" id="client_full_name" oninput="document.getElementById('required_fname').style.display = 'none'" onkeyup="this.value=this.value.replace(/[^\sa-zA-Z]/g,'');" class="form-control" placeholder="Nombre">
                             <div class="invalid-feedback" id="required_fname">
-                                Invalid Name!
+                                Nombre Invalido!
                             </div>
                         </div>
                     </div>
@@ -388,19 +390,19 @@
                         <div class="col-sm-6">
                             <input type="email" name="client_email" id="client_email" oninput="document.getElementById('required_email').style.display = 'none'" class="form-control" placeholder="E-mail">
                             <div class="invalid-feedback" id="required_email">
-                                Invalid E-mail!
+                                E-mail Invalido!
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text"  name="client_phone_number" id="client_phone_number" oninput="document.getElementById('required_phone').style.display = 'none'" class="form-control" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Phone number">
+                            <input type="text"  name="client_phone_number" id="client_phone_number" oninput="document.getElementById('required_phone').style.display = 'none'" class="form-control" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Numero de telefono">
                             <div class="invalid-feedback" id="required_phone">
-                                Invalid Phone number!
+                                Numero de telefono Invalido!
                             </div>
                         </div>
                     </div>
                     <div class="form-group colum-row row">
                         <div class="col-sm-12">
-                            <input type="text" name="client_delivery_address" id="client_delivery_address" oninput="document.getElementById('required_delivery_address').style.display = 'none'" class="form-control" placeholder="Delivery Address">
+                            <input type="text" name="client_delivery_address" id="client_delivery_address" oninput="document.getElementById('required_delivery_address').style.display = 'none'" class="form-control" placeholder="Dirección de entrega">
                             <div class="invalid-feedback" id="required_delivery_address">
                                 
                             </div>
@@ -414,8 +416,8 @@
             <div style="overflow:auto;padding: 30px;">
                 <div style="float:right;">
                     <input type="hidden" name="submit_order_food_form">
-                    <button type="button" class="next_prev_buttons" style="background-color: #bbbbbb;"  id="prevBtn"  onclick="nextPrev(-1)">Previous</button>
-                    <button type="button" id="nextBtn" class="next_prev_buttons" onclick="nextPrev(1)">Next</button>
+                    <button type="button" class="next_prev_buttons" style="background-color: #bbbbbb;"  id="prevBtn"  onclick="nextPrev(-1)">Regresar</button>
+                    <button type="button" id="nextBtn" class="next_prev_buttons" onclick="nextPrev(1)">Siguiente</button>
                 </div>
             </div>
 
@@ -533,11 +535,11 @@
             
             if (n == (x.length - 1)) 
             {
-                document.getElementById("nextBtn").innerHTML = "Submit";
+                document.getElementById("nextBtn").innerHTML = "Enviar";
             } 
             else 
             {
-                document.getElementById("nextBtn").innerHTML = "Next";
+                document.getElementById("nextBtn").innerHTML = "Siguiente";
             }
 
             fixStepIndicator(n)
