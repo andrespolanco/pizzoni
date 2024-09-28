@@ -71,7 +71,7 @@ body
 {
     background-color:#222227;
     width:100%;
-    height:120px;
+    height:80px;
     z-index:999;
     position:fixed;
     left:0;
@@ -142,7 +142,7 @@ ul.nav>li>a:hover
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 525px;
     background-attachment: fixed;
 }
 
@@ -252,8 +252,8 @@ ul.nav>li>a:hover
     color: rgb(255, 255, 255);
     white-space: nowrap;
     letter-spacing: 12px;
-    font-weight: 400;f
-    ont-size: 30px;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .home-section p

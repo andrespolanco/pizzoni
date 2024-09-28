@@ -10,7 +10,7 @@
                 <div class="d-flex menu-wrap align-items-center">
                     <div class="mainmenu" id="mainmenu">
                         <ul class="nav">
-                        <li><img src="Design/images/logo.jpg" alt="Logotipo del Restaurante" style="width: 150px;margin-bottom: 20px;"></li>
+                        <li><img src="Design/images/logo2.jpg" alt="Logotipo del Restaurante" style="width: 70px; padding-top: 32%;"></li>
                             <li><a href="index.php#home">INICIO</a></li>
                             <li><a href="index.php#menus">MENÚS</a></li>
                             <li><a href="index.php#gallery">GALERÍA</a></li>
@@ -26,6 +26,6 @@
         </div>
     </header>
 
-	<div class="header-height" style="height: 120px;"></div>
+	<div class="header-height" style="height: 80px;"></div>
 
     <!-- FIN DE LA SECCION DE BARRA DE NAVEGACION -->
