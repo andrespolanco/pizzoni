@@ -1,4 +1,4 @@
-<?php
+    <?php
     ob_start();
 	session_start();
 
@@ -55,6 +55,7 @@
                                     <th scope="col">Client Name</th>
                                     <th scope="col">Phone number</th>
                                     <th scope="col">E-mail</th>
+                                    <th scope="col">Eliminar</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -70,6 +71,40 @@
                                             echo "</td>";
                                             echo "<td>";
                                                 echo $client['client_email'];
+                                            echo "</td>";
+                                            echo "<td>";
+                                                $delete_data = "delete_".$client["client_id"];
+                                ?>
+                                                 <ul class="list-inline m-0">
+                                                    <li class="list-inline-item" data-toggle="tooltip" title="Delete">
+                                                        <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="modal" data-target="#<?php echo $delete_data; ?>" data-placement="top"><i class="fa fa-trash"></i>
+                                                        </button>
+
+                                                        <!-- Delete Modal -->
+
+                                                        <div class="modal fade" id="<?php echo $delete_data; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $delete_data; ?>" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title">Eliminar cliente<?php echo $delete_data; ?></h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ¿Está seguro de que desea eliminar este Cliente "<?php echo ($client['client_name']); ?>"?    
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" data-id = "<?php echo $client['client_id']; ?>" class="btn btn-danger delete_client_bttn">Borrar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                 </ul>
+                                                 <?php
+                                                /****/
                                             echo "</td>";
                                         echo "</tr>";
                                     }
@@ -93,3 +128,33 @@
         exit();
     }
 ?>
+
+
+<!-- JS SCRIPTS -->
+
+<script type="text/javascript">
+
+$('.delete_client_bttn').click(function()
+    {
+        var client_id = $(this).data('id');
+        var do_ = "Delete";
+
+        $.ajax(
+        {
+            url:"ajax_files/client_ajax.php",
+            method:"POST",
+            data:{client_id:client_id,do_:do_},
+            success: function (data) 
+            {
+                swal("Borrar Cliente","El cliente fue eliminado con exito!", "success").then((value) => {
+                    window.location.replace("clients.php");
+                });     
+            },
+            error: function(xhr, status, error) 
+            {
+                alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
+            }
+          });
+    });
+
+</script>

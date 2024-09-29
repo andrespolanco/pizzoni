@@ -47,13 +47,13 @@
                                 </div>
                                 <div class="col-sm-9 text-right">
                                     <div class="huge"><span><?php echo countItems("client_id","clients")?></span></div>
-                                    <div>Total Clients</div>
+                                    <div>Total de Clientes</div>
                                 </div>
                             </div>
                         </div>
                         <a href="clients.php">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver más</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -69,13 +69,13 @@
                                 </div>
                                 <div class="col-sm-9 text-right">
                                     <div class="huge"><span><?php echo countItems("menu_id","menus")?></span></div>
-                                    <div>Total Menus</div>
+                                    <div>Total de Menús</div>
                                 </div>
                             </div>
                         </div>
                         <a href="menus.php">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver más</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -91,14 +91,14 @@
                                     <i class="far fa-calendar-alt fa-4x"></i>
                                 </div>
                                 <div class="col-sm-9 text-right">
-                                    <div class="huge"><span>32</span></div>
-                                    <div>Total Appointments</div>
+                                    <div class="huge"><span><?php echo countItems("reservation_id","reservations")?></span></div>
+                                    <div>Total de Reservas</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver más</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -114,13 +114,13 @@
                                 </div>
                                 <div class="col-sm-9 text-right">
                                     <div class="huge"><span><?php echo countItems("order_id","placed_orders")?></span></div>
-                                    <div>Total Orders</div>
+                                    <div>Total de Ordenes</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver más</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -136,9 +136,9 @@
                 <!-- TABS BUTTONS -->
 
                 <div class="card-header tab" style="padding:0px;">
-                    <button class="tablinks_orders active" onclick="openTab(event, 'recent_orders','tabcontent_orders','tablinks_orders')">Recent Orders</button>
-                    <button class="tablinks_orders" onclick="openTab(event, 'completed_orders','tabcontent_orders','tablinks_orders')">Completed Orders</button>
-                    <button class="tablinks_orders" onclick="openTab(event, 'canceled_orders','tabcontent_orders','tablinks_orders')">Canceled Orders</button>
+                    <button class="tablinks_orders active" onclick="openTab(event, 'recent_orders','tabcontent_orders','tablinks_orders')">Ordenes Recientes</button>
+                    <button class="tablinks_orders" onclick="openTab(event, 'completed_orders','tabcontent_orders','tablinks_orders')">Ordenes completadas</button>
+                    <button class="tablinks_orders" onclick="openTab(event, 'canceled_orders','tabcontent_orders','tablinks_orders')">Ordenes Canceladas</button>
                 </div>
 
                 <!-- TABS CONTENT -->
@@ -152,19 +152,19 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Order Time Created
+                                        Hora de Creación del Pedido
                                     </th>
                                     <th>
-                                        Selected Menus
+                                        Menús Seleccionados
                                     </th>
                                     <th>
-                                        Total Price
+                                        Precio Total
                                     </th>
                                     <th>
-                                        Client
+                                        Cliente
                                     </th>
                                     <th>
-                                        Manage
+                                        Gestionar
                                     </th>
                                 </tr>
                             </thead>
@@ -345,13 +345,13 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Order Time Created
+                                        Hora de Creación del Pedido
                                     </th>
                                     <th>
-                                        Menus
+                                        Menús
                                     </th>
                                     <th>
-                                        Client
+                                        Cliente
                                     </th>
                                 </tr>
                             </thead>
@@ -425,13 +425,13 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Order Time Created
+                                        Hora de Creación del Pedido
                                     </th>
                                     <th>
-                                        Client
+                                        Cliente
                                     </th>
                                     <th>
-                                        Cancellation Reason
+                                        Motivo de Cancelación
                                     </th>
                                 </tr>
                             </thead>
@@ -497,9 +497,9 @@
                 <!-- TABS BUTTONS -->
 
                 <div class="card-header tab" style="padding:0px;">
-                    <button class="tablinks_reservations active" onclick="openTab(event, 'recent_reservations','tabcontent_reservations','tablinks_reservations')">Recent Reservations</button>
-                    <button class="tablinks_reservations" onclick="openTab(event, 'completed_reservations','tabcontent_reservations','tablinks_reservations')">Completed Reservations</button>
-                    <button class="tablinks_reservations" onclick="openTab(event, 'canceled_reservations','tabcontent_reservations','tablinks_reservations')">Canceled Reservations</button>
+                    <button class="tablinks_reservations active" onclick="openTab(event, 'recent_reservations','tabcontent_reservations','tablinks_reservations')">Reservaciones Recientes</button>
+                    <button class="tablinks_reservations" onclick="openTab(event, 'completed_reservations','tabcontent_reservations','tablinks_reservations')">Reservaciones Completas</button>
+                    <button class="tablinks_reservations" onclick="openTab(event, 'canceled_reservations','tabcontent_reservations','tablinks_reservations')">Reservaciones Canceladas</button>
                 </div>
 
                 <!-- TABS CONTENT -->
@@ -513,19 +513,19 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Reservation Time Created
+                                        Hora de Creación de la Reserva
                                     </th>
                                     <th>
-                                        Reservation Date and Time
+                                        Fecha y Hora de la Reserva
                                     </th>
                                     <th>
-                                        Number of Guests
+                                        Número de Invitados
                                     </th>
                                     <th>
-                                        Table ID
+                                        ID de la Mesa
                                     </th>
                                     <th>
-                                        Manage
+                                        Gestionar
                                     </th>
                                 </tr>
                             </thead>
@@ -662,13 +662,13 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Reservation Date Created
+                                        Fecha de Creación de la Reserva
                                     </th>
                                     <th>
-                                        Reservation Date
+                                        Fecha de la Reserva
                                     </th>
                                     <th>
-                                        Table ID
+                                        ID de la Mesa
                                     </th>
                                 </tr>
                             </thead>
@@ -730,10 +730,10 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Reservation Date Created
+                                        Fecha de Creación de la Reserva
                                     </th>
                                     <th>
-                                        Cancellation Reason
+                                        Motivo de Cancelación
                                     </th>
                                 </tr>
                             </thead>

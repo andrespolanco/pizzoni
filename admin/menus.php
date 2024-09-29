@@ -197,7 +197,7 @@
                                             echo "</td>";
                                             echo "<td>";
                                                 /****/
-                                                    $delete_data = "delete_".$menu["menu_id"];
+                                                    echo $delete_data = "delete_".$menu["menu_id"];
                                                     $view_data = "view_".$menu["menu_id"];
                                                     ?>
                                                         <ul class="list-inline m-0">

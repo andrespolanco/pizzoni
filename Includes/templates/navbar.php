@@ -10,7 +10,7 @@
                 <div class="d-flex menu-wrap align-items-center">
                     <div class="mainmenu" id="mainmenu">
                         <ul class="nav">
-                        <li><img src="Design/images/logo2.jpg" alt="Logotipo del Restaurante" style="width: 70px; padding-top: 32%;"></li>
+                            <li><a href="index.php#home"><img src="Design/images/logo2.jpg" alt="Logotipo del Restaurante" style="width: 70px;"></a></li>
                             <li><a href="index.php#home">INICIO</a></li>
                             <li><a href="index.php#menus">MENÚS</a></li>
                             <li><a href="index.php#gallery">GALERÍA</a></li>

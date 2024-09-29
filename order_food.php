@@ -272,7 +272,7 @@
                     }
                     
                     echo "<div class = 'alert alert-success'>";
-                        echo "Great! Your order has been created successfully.";
+                        echo "Genial! Tu pedido ha sido realizado con éxito!";
                     echo "</div>";
 
                     $con->commit();
@@ -404,7 +404,7 @@
                         <div class="col-sm-12">
                             <input type="text" name="client_delivery_address" id="client_delivery_address" oninput="document.getElementById('required_delivery_address').style.display = 'none'" class="form-control" placeholder="Dirección de entrega">
                             <div class="invalid-feedback" id="required_delivery_address">
-                                
+                                Completar la dirección
                             </div>
                         </div>
                     </div>
